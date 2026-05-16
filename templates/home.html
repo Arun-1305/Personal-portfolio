@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <style>
+            body{
+                background: linear-gradient(rgb(0, 0, 0, 0.5)), url("/static/blue-technology-1920x1080.jpg");
+                color:white;
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+
+            .box{
+                text-align:center;
+                animation: fade 2s;
+                border-radius: 30px;
+                padding: 30px;
+                background-color: rgba(126, 128, 128, 0.1);
+        
+                
+            }
+
+            input{
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 8px;
+                border: none;
+                
+            }
+            
+            button{
+                margin: 25px;
+                padding: 15px;
+                border-radius: 20px;
+                background-color: rgba(92, 93, 94, 0.1);
+                color: white;
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+
+            @keyframes fade{
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+
+            button:hover{
+                animation: pop 500ms ease-in-out infinite alternate;
+                background-color: rgb(255, 255, 255, 0.1);
+            }
+
+            @keyframes pop{
+                from{scale: 0.97}
+                to{scale: 1}
+            }
+
+            .box:hover{
+                background-color: rgb(58, 72, 72, 0.);
+            }
+    
+
+    
+    </style>
+    <body>
+    
+         <div class="box">
+            <h1 style="font-family: Arial">WELCOME TO MY PORTFOLIO</h1>
+            <h2>ENTER DETAILS</h2>
+            <form method="POST">
+           <b> Full name: </b><input type="text" placeholder="Enter name" title="please fill in this field" name="text" required>
+            <b>Password: </b><input type="password" placeholder="Enter here" name="password" required>
+            <br>
+            <button type=submit><b style="color: rgb(253, 253, 253);">Submit</b></button>
+            </form>
+         </div>
+    </body>
+        
+    
+ </head>     
+</html>
